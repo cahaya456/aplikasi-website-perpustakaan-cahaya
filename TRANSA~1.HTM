@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Aplikasi Perpustakaan Cahaya</title>
+    <link rel="stylesheet" href="uas perpus cahaya styles.css">
+</head>
+<body>
+    <header>
+        <img src="LOGO PERPUSTAKAAN CAHAYA.jpg" alt="Logo Aplikasi Perpustakaan Cahaya" id="logo" width="400" height="200">
+        <nav>
+            <ul>
+                <li><a href="beranda perpus cahaya.html">Beranda</a></li>
+                <li><a href="transaksi perpus cahaya.html">Transaksi</a></li>
+                <li><a href="profil perpus cahaya.html">Profil</a></li>
+                <li><a href="login perpus cahaya.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Transaksi</h1>
+        <form id="transaksiForm">
+            <label for="namaTransaksi">Nama Transaksi:</label>
+            <input type="text" id="namaTransaksi" required>
+            
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" required>
+            
+            <label for="kategori">Kategori:</label>
+            <input type="text" id="kategori" required>
+            
+            <button type="submit">Save</button>
+        </form>
+
+        <h2>Daftar Transaksi</h2>
+        <table id="daftarTransaksi">
+            <thead>
+                <tr>
+                    <th>Nama Transaksi</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data transaksi akan ditambahkan di sini -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>  Aplikasi Perpustakaan Cahaya</p>
+    </footer>
+
+    <script src="uas website perpus script.js"></script>
+</body>
+</html>

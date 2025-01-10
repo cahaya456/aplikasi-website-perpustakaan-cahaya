@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aplikasi Perpustakaan Cahaya</title>
+    <link rel="stylesheet" href="uas perpus cahaya styles.css">
+</head>
+<body>
+    <header>
+        <img src="LOGO PERPUSTAKAAN CAHAYA.jpg" alt="Logo Aplikasi Perpustakaan Cahaya" id="logo" width="400" height="200">
+        <nav>
+            <ul>
+                <li><a href="beranda perpus cahaya.html">Beranda</a></li>
+                <li><a href="transaksi perpus cahaya.html">Transaksi</a></li>
+                <li><a href="profil perpus cahaya.html">Profil</a></li>
+                <li><a href="login perpus cahaya.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function validateLogin() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+    
+            if (username === "mecahaya" && password === "meca4u") {
+                alert("Login berhasil! Halo Selamat datang! " + username + ".");
+                window.location.href = "layout uas website.html"; 
+            } else {
+                alert("Login gagal! Username atau password salah.");
+            }
+        }
+    </script>
+
+<div class="login-section">
+    <h3>Login</h3>
+    <form onsubmit="event.preventDefault(); validateLogin();">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        <button type="submit">Login</button>
+    </form>
+        </div>
+
+    <footer>
+        <p> Aplikasi Perpustakaan Cahaya</p>
+    </footer>
+
+    <script src="uas website perpus script.js"></script>
+</body>
+</html>
